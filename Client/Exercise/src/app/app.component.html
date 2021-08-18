@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="box-search">
+    <div class="item-search">
+      <h4>DANH SÁCH COIN : DOGE,XRP,AXS,SOL,BNB</h4>
+    </div>
+  </div>
+  <div class="box-search" style="display: none;">
+    <div class="item-search">
+      <input type="text" class="form-control" [(ngModel)]="coinSearch.Name" name="Name">
+    </div>
+    <div class="item-search">
+      <button class="btn btn-primary" (click)="search()">Tìm kiếm</button>
+    </div>
+  </div>
+  <div class="box-search">
+    <div class="item-data">
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Cặp</th>
+            <th>Giá gần nhất (USD)</th>
+            <th>Thay đổi 24h</th>
+            <th>Giá cao nhất 24h (USD)</th>
+            <th>Giá thấp nhất 24h (USD)</th>
+            <th>Vốn hóa thị trường</th>
+            <th>Khối lượng 24h</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of data; let i = index">
+            <td class="text-center">{{i+1}}</td>
+            <td class="text-center">{{item.symbol}}</td>
+            <td class="text-center">{{item.lastPrice | number:'1.0-4'}}</td>
+            <td class="text-center">{{item.priceChangePercent | number:'1.0-4'}}</td>
+            <td class="text-center">{{item.highPrice | number:'1.0-4'}}</td>
+            <td class="text-center">{{item.lowPrice | number:'1.0-4'}}</td>
+            <td>{{item.volume | number:'1.0-4'}}</td>
+            <td>{{item.quoteVolume | number:'1.0-4'}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
