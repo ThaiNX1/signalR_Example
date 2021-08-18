@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "KDFNbulFvIOGbt37NgKR6+gL55AcwAOAuCLsS/Hk2X1PnEj80konRpxQWw/4SKOevuU2Hz6LFAxfcDWHlGCnDA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Thainx\\source\\repos\\APITest\\APITest\\APITest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Thainx\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Thainx\\.nuget\\packages\\restsharp\\106.12.0\\restsharp.106.12.0.nupkg.sha512"
+  ],
+  "logs": []
+}
